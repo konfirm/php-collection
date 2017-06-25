@@ -1,0 +1,23 @@
+{
+    "name": "konfirm/collection",
+    "description": "Uniform collection (array-like) operations",
+    "type": "library",
+    "license": "DBAD",
+    "authors": [
+        {
+            "name": "Rogier Spieker",
+            "email": "rogier+php-list@konfirm.eu"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Konfirm\\Collection\\": "src/"
+        }
+    }
+}
