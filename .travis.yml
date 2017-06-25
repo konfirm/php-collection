@@ -1,12 +1,11 @@
 language: php
-
 php:
 - '7.0'
 - '7.1'
 - nightly
-
 install:
 - composer install --dev
-
 script: ./vendor/bin/phpunit
-
+notifications:
+  slack:
+    secure: oXzIwtd672zIGNMEWPWuqL7eyMTuLRKBIrFV2aljR19DG1RD9SwtIH71xWVJwGgD8Bd9Qx/fC22Gtr8eSs8OrUzXgjsOStbX8d8QuBqEJBgAthpfTKoV89Rr89CM4VkR/r1aw3Vkxp0UZqzWG3meMUxgNcsZc96RHyTNob2k9MYeDDEeMyJLp+IwfIgS2z4ANCOTMJ0ej7fzDqGSC//Nz/oPIE+CAVBTuKDGwWYATp3xsqighjwSAKAS7UmpKTYWkx3FKAfT9lPipcFgVydHtrWPnkp9cKuAPBRCmdAz4blK05lixmINaNdOIcCofOwJwckiTGqDxW1ZhkX/po6WQyJfLIvGXHkV3h/ssmH+gXzGWWWK7yvKOdCcyCxnWg8b1IY/4Zxeg7BSQ/WZv9J1KtB3Lat0Do43T0l3BFwdIo1Y7MA8f3jz5mBGt+8LZwG/uc7ii/nBJh1BJUMPhxwXItQlawXTZTKRuWKLJ5QEyH32qM4iWDnre3L0tyvCUeU4bJv3gL344DwbKRhd50MO47dwcaaYYBCdDblV8gz5MgBdohHpVLk9NBuOowNCaW8BE6sZ8+fLmvEV8PjqEix/yEKtimK7EYhFJwmrXbH1uvESCAiANyIwtRS63Sm7/4suG0ordogLljMByiU6R770LO7cQ8MgeJT9nNxtiZI6R+c=
