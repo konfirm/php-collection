@@ -57,7 +57,7 @@ class Provider implements \Iterator, \ArrayAccess, \Countable {
 			}
 		}
 
-		return new Provider(...$result);
+		return new static(...$result);
 	}
 
 	/**
@@ -71,7 +71,7 @@ class Provider implements \Iterator, \ArrayAccess, \Countable {
 			$result[] = $map($value, $key, $this);
 		}
 
-		return new Provider(...$result);
+		return new static(...$result);
 	}
 
 	/**
@@ -114,7 +114,7 @@ class Provider implements \Iterator, \ArrayAccess, \Countable {
 			$intersect = array_merge($intersect, $provider->find($source)->toArray());
 		}
 
-		return new Provider(...$intersect);
+		return new static(...$intersect);
 	}
 
 	/**
@@ -137,7 +137,7 @@ class Provider implements \Iterator, \ArrayAccess, \Countable {
 			}
 		}
 
-		return new Provider(...$unique);
+		return new static(...$unique);
 	}
 
 
