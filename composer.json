@@ -2,7 +2,7 @@
     "name": "konfirm/collection",
     "description": "Uniform collection (array-like) operations",
     "type": "library",
-    "license": "DBAD",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rogier Spieker",
